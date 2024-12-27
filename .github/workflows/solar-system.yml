@@ -13,6 +13,7 @@ env:
 
 jobs:
     unit-testing:
+    
         name: Unit Testing
         runs-on: ubuntu-latest
         steps:
@@ -37,6 +38,7 @@ jobs:
             path: test-results.xml
 
     unit-testin:
+        needs: unit-testing
         name: Unit Testin
         runs-on: ubuntu-latest
         steps:
